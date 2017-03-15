@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TNine.Console", "TNine.Cons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TNine.Common", "TNine.Common\TNine.Common.csproj", "{75D74B5E-ED01-4369-B5F5-669738EE4C59}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TNine.Tests", "TNine.Tests\TNine.Tests.csproj", "{1BB99BCE-0166-4FE8-8AD1-E443ADEB35FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{75D74B5E-ED01-4369-B5F5-669738EE4C59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75D74B5E-ED01-4369-B5F5-669738EE4C59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75D74B5E-ED01-4369-B5F5-669738EE4C59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BB99BCE-0166-4FE8-8AD1-E443ADEB35FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BB99BCE-0166-4FE8-8AD1-E443ADEB35FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BB99BCE-0166-4FE8-8AD1-E443ADEB35FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BB99BCE-0166-4FE8-8AD1-E443ADEB35FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

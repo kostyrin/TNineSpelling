@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Management.Instrumentation;
 using TNine.Common;
 
 namespace TNine.Processor.TNineAlphabet
@@ -19,7 +20,7 @@ namespace TNine.Processor.TNineAlphabet
 		{
 		    var result = _latinMap.FirstOrDefault(l => l.FunctorMethod(symbol));
 
-            if (result.Equals(default(KeyValuePair<string, char>))) throw new ArgumentOutOfRangeException($"{TNineResource.BadInputSymbol} {symbol} ");
+            if (result.Equals(default(KeyValuePair<string, char>))) throw new ArgumentNullException($"{TNineResource.BadInputSymbol} {symbol} ");
 
             int appendTimes = result.Key.IndexOf(symbol);
             if (appendTimes == -1) throw new IndexOutOfRangeException(symbol.ToString());

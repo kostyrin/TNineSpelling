@@ -27,8 +27,10 @@ namespace TNine.Processor.TNineStringProcessor
 				return string.Empty;
 			}
 
-            if ((!isLarge && processingString.Length < 1 && processingString.Length > 15) 
-                || (isLarge && processingString.Length < 1 && processingString.Length > 1000))
+		    var currentLength = processingString.Length;
+
+            if ((!isLarge && (currentLength < 1 || currentLength > 15)) 
+                || (isLarge && (currentLength < 1 || currentLength > 1000)))
                     throw new ArgumentOutOfRangeException(processingString);
 
             StringBuilder resultString = new StringBuilder();
@@ -37,7 +39,7 @@ namespace TNine.Processor.TNineStringProcessor
             foreach (char symbol in processingString)
             {
                 var numbers = _t9Alphabet.GetT9CharArray(symbol);
-                if (numbers.Last() == previosChar)
+                if (previosChar.Equals(numbers.Last()))
                 {
                     resultString.Append(' ');
                 }
