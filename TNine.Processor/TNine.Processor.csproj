@@ -42,7 +42,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TNineAlphabet\TNineAlhabetMapType.cs" />
-    <Compile Include="TNineAlphabetMapFactory\TNineSimpleAlphabetFactory.cs" />
+    <Compile Include="TNineAlphabetMapFactory\TNineAlphabetFactory.cs" />
     <Compile Include="TNineAlphabet\TNineAlphabetMap.cs" />
     <Compile Include="TNineAlphabet\TNineLatinMap.cs" />
     <Compile Include="TNineAlphabet\TNineLatinSymbolFind.cs" />
