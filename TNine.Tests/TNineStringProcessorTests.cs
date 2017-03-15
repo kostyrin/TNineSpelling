@@ -109,5 +109,10 @@ namespace TNine.Tests
             //Assert
             Assert.Throws<ArgumentOutOfRangeException>(() => _nineStringProcessor.Process(word, isLargeDataSet));
         }
+
+        ~TNineStringProcessorTests()
+        {
+            _nineStringProcessor.Dispose();
+        }
     }
 }
