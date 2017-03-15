@@ -61,6 +61,15 @@ namespace TNine.Common {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bad input symbol (expecting latin lowercase symbol).
+        /// </summary>
+        public static string BadInputSymbol {
+            get {
+                return ResourceManager.GetString("BadInputSymbol", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Please. Enter a path for the Input File.
         /// </summary>
         public static string EnterPathForInputFile {

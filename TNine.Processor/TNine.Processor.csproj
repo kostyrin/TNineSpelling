@@ -48,6 +48,12 @@
     <Compile Include="TNineAlphabet\TNineLatinSymbolFind.cs" />
     <Compile Include="TNineStringProcessor\TNineSimpleStringProcessor.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TNine.Common\TNine.Common.csproj">
+      <Project>{75d74b5e-ed01-4369-b5f5-669738ee4c59}</Project>
+      <Name>TNine.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
